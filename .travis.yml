@@ -1,0 +1,19 @@
+branches:
+  only:
+    - master
+    - develop
+language: node_js
+node_js:
+  - "12.11.0"
+before_install:
+  - 'npm i -g eslint'
+  - 'npm i -g eslint-plugin-promise'
+script:
+  - 'npm run build'
+  - 'npm run test'
+  - 'npm run lint'
+deploy:
+  provider: firebase
+  skip_cleanup: true
+  token:
+    secure: "1//0eAp3B2dShrTgCgYIARAAGA4SNwF-L9IrcJSctGRn2GdQ0LW1LPRp367exXKQf-Bs6sMu3qV6RKDxjJ-BENOMCokjIiiludEy6xM"
