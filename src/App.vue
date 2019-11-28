@@ -38,7 +38,7 @@
                 this.msg = ''
             },
             getGeoNames(){
-                fetch('http://www.geonames.org/postalCodeLookupJSON?postalcode=10504&country=US')
+                fetch('//www.geonames.org/postalCodeLookupJSON?postalcode=10504&country=US')
                     .then( respons => {
                         return respons.json()
                     })
