@@ -1,6 +1,9 @@
 <template>
   <div>
-    <p>{{msg}}</p>
+    <p v-if="msg.length > 0">
+      {{msg}}
+    </p>
+    <p v-else>no text.</p>
     <input type="text" v-model="msg">
   </div>
 </template>
