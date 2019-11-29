@@ -6,8 +6,8 @@ language: node_js
 node_js:
   - "12.11.0"
 before_install:
-  - 'yarn i -g eslint'
-  - 'yarn i -g eslint-plugin-promise'
+  - 'yarn global add eslint'
+  - 'yarn global add eslint-plugin-promise'
 script:
   - 'yarn run build'
   - 'yarn run test'
