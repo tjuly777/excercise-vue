@@ -6,12 +6,12 @@ language: node_js
 node_js:
   - "12.11.0"
 before_install:
-  - 'npm i -g eslint'
-  - 'npm i -g eslint-plugin-promise'
+  - 'yarn i -g eslint'
+  - 'yarn i -g eslint-plugin-promise'
 script:
-  - 'npm run build'
-  - 'npm run test'
-  - 'npm run lint'
+  - 'yarn run build'
+  - 'yarn run test'
+  - 'yarn run lint'
 deploy:
   provider: firebase
   skip_cleanup: true
